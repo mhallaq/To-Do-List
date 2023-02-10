@@ -61,7 +61,7 @@ function displayTasks(ToDoTasks) {
     taskLine.setAttribute("data-id", task.id);
     taskLine.setAttribute("data-creation_Date", task.taskAdditionDate);
     taskLine.appendChild(document.createTextNode(task.text));
-    let deleteTask = document.createElement("span");
+    let deleteTask = document.createElement("button");
     deleteTask.className = "delete";
     deleteTask.appendChild(document.createTextNode("Delete"));
 
